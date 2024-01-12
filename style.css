@@ -1,0 +1,172 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+    
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #262933;
+}
+
+.intro {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    color: white;
+}
+.intro span{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    a{
+        color: #F8EDFF;
+    }
+}
+
+
+
+
+
+.calculator
+{
+    background-color: #1E1E1E;
+    width: 100%;
+    max-width: 375px;
+    min-height: 540px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0px -2px 16px rgba(0,0,0.2);
+
+}
+
+.display
+{
+    min-height: 200px;
+    padding: 1.5rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #F8EDFF;
+    text-align: right;
+    flex: 1 1 0%;
+}
+
+.display .input {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.display .output
+{
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.display .operator
+{
+    color: #AACFE7;
+}
+.display .brackets,
+.display .percent
+{
+    color: aqua;
+}
+
+.keys
+{
+    background-color: #1E1E1E;
+    padding: 1.5rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 1rem;
+    box-shadow: 0px -2px 16px rgba(0,0,0.2);
+
+}
+
+.keys .key{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    height: 0;
+    padding-top: 100%;
+    background-color: #F8EDFF;
+    border-radius: 3rem;
+    transition: 0.2s;
+    user-select: none;
+    box-shadow: 0px -2px 16px rgba(0,0,0.2);
+
+}
+
+.keys .key.operator{
+    background-color: #525CEB;
+}
+
+
+.keys .key.action{
+    background-color: #AACFE7;
+}
+
+.keys .key.action[data-key="clear_AC"]{
+    width: 225%;
+    z-index: 2;
+}
+
+.keys .key.action[data-key="clear"]
+{
+    z-index: 1;
+    opacity: 0.0;
+}
+
+.keys .key.zero{
+    background-color: #F8EDFF;
+}
+
+.keys .key.zero[data-key="0"]{
+    width: 225%;
+    z-index: 2;
+}
+
+.keys .key[data-key="00"]
+{
+    z-index: 1;
+    opacity: 0.0;
+}
+
+.keys .key span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:2rem;
+    font-weight: 700;
+    color: #1E1E1E;
+
+}
+
+.keys .key:hover{
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.keys .key.operator span{
+    color: #1E1E1E;
+
+}
+
+.keys .key.action span{
+    color: #1E1E1E;
+
+
+}
