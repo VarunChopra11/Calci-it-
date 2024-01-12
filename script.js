@@ -12,10 +12,7 @@ for (let key of keys) {
 			input = "";
 			display_input.innerHTML = "";
 			display_output.innerHTML = "";
-		} else if (value == "backspace") {
-			input = input.slice(0, -1);
-			display_input.innerHTML = CleanInput(input);
-		} else if (value == "=") {
+		}else if (value == "=") {
 			let result = eval(PerpareInput(input));
 
 			display_output.innerHTML = CleanOutput(result);
