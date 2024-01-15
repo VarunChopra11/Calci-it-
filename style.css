@@ -1,11 +1,13 @@
-* {
+*
+{
     margin:0;
     padding: 0;
     box-sizing: border-box;
     font-family:'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
 }
 
-.app {
+.app
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +17,12 @@
 
 .intro
 {
+    display: flex;
+    font-size: 1.5vw;
+    width: 25vw;
+    height: 10vh;
+    margin: 0;
+    box-sizing: border-box;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -157,18 +165,4 @@
 .keys .key.action span
 {
     color: #1E1E1E;
-}
-
-@media screen and (max-width: 768px)
-{
-    .intro span
-    {
-        font-size: 0.8rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .intro span {
-        font-size: 0.6rem;
-    }
 }
