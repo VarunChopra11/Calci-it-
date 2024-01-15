@@ -19,15 +19,13 @@
 {
     display: flex;
     font-size: 1.5vw;
-    width: 25vw;
-    height: 12vh;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     position: absolute;
     bottom: 0;
     right: 0;
-    font-weight: bold;
-    padding: 1rem;
+    font-weight: bold;  
     color: #F8EDFF;
 }
 
